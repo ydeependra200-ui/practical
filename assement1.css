@@ -1,0 +1,132 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: #0277bd;
+  margin-bottom: 30px;
+}
+
+.input-section {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #424242;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 16px;
+}
+input:focus {
+  outline: none;
+  border-color: #0288d1;
+  box-shadow: 0 0 0 3px rgba(2,136,209,0.15);
+}
+#addBtn {
+  background: #43a047;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#addBtn:hover {
+  background: #388e3c;
+}
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+button {
+  padding: 10px 20px;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+#showAll       { background: #1976d2; color: white; }
+#showTotals    { background: #f57c00; color: white; }
+#showAverages  { background: #7b1fa2; color: white; }
+#showTop       { background: #388e3c; color: white; }
+#showFailed    { background: #d32f2f; color: white; }
+#countStudents { background: #455a64; color: white; }
+#clearDisplay  { background: #757575; color: white; }
+.output-area {
+  background: #fafafa;
+  min-height: 200px;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  line-height: 1.6;
+}
+.student-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.student-card h3 {
+  margin: 0 0 12px;
+  color: #0277bd;
+}
+
+.highlight-good {
+  background: #e8f5e9;
+  border-left: 5px solid #43a047;
+}
+
+.highlight-bad {
+  background: #ffebee;
+  border-left: 5px solid #d32f2f;
+}

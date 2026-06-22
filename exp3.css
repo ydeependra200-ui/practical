@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    transition: background-color 0.4s ease;
+    padding: 20px;
+}
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #1e3a8a;
+    transition: all 0.3s ease;
+}
+.input-group {
+    margin: 25px 0;
+}
+input {
+    width: 70%;
+    padding: 14px 20px;
+    font-size: 1.1rem;
+    border: 2px solid #93c5fd;
+    border-radius: 50px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+input:focus {
+    border-color: #1e40af;
+    box-shadow: 0 0 0 4px rgba(30, 64, 175, 0.2);
+}
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin: 30px 0;
+}
+button {
+    padding: 14px 24px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+#change-text { background: #1e40af; color: white; }
+#change-bg { background: #7c3aed; color: white; }
+#change-font { background: #ea580c; color: white; }
+#toggle-para { background: #16a34a; color: white; }
+#reset { background: #ef4444; color: white; }
+#dynamic-para {
+    margin: 30px auto;
+    max-width: 600px;
+    padding: 20px;
+    background: #f8fafc;
+    border-left: 6px solid #3b82f6;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    transition: all 0.4s ease;
+}
+.hidden {
+    opacity: 0;
+    height: 0;
+    padding: 0 20px;
+    overflow: hidden;
+    margin: 0;
+}
+.status {
+    margin-top: 15px;
+    font-weight: 500;
+    min-height: 24px;
+}
+.info {
+    margin-top: 40px;
+    font-size: 0.95rem;
+    color: #64748b;
+}
